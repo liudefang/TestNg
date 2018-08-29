@@ -30,7 +30,7 @@ public class ProductfeeSaveTest {
     private HttpEntity entity;
     private String postResult = null;
     private String getResult = null;
-    public static String URL = "http://qa1-erp.jfz.com:8080/erp/scm/productfee";
+    public static String URL = "http://qa1-erp.test.com:8080/erp/scm/productfee";
     public static String productfeeurl = "";
     public int status,exp_status ;
     public String exp_errorMessage;
@@ -41,7 +41,7 @@ public class ProductfeeSaveTest {
     @Test
     public void Login(){
 
-        String loginurl = "http://qa1-erp.jfz.com:8080/login.ht";
+        String loginurl = "http://qa1-erp.test.com:8080/login.ht";
         httppost = new HttpPost( loginurl );
 
         List<NameValuePair> formTabe = new ArrayList<NameValuePair>();
@@ -64,7 +64,7 @@ public class ProductfeeSaveTest {
     //新增费率成功
     @DataProvider (name = "Productfee")
     public static Object[][] productfee(){
-        String URL = "http://qa1-erp.jfz.com:8080/erp/scm/productfee/save.ht";
+        String URL = "http://qa1-erp.test.com:8080/erp/scm/productfee/save.ht";
         String data = "{\"agreementOrgId\":20000112446294,\"agreementOrgName\":\"夏道山测试数据\",\"agreementType\":\"2\",\"validityFrom\":\"2017-09-04\",\"validityTo\":\"2017-09-10\",\"incomeCalculationSource\":\"2\",\"isInstallment\":\"1\",\"incomeCalculationBenchmark\":\"1\",\"isUpdatingFee\":0,\"subscriptionForms\":[{\"period\":1,\"subscriptionRatio\":\"0.5\",\"subscriptionTime\":\"2017-09-10\"}],\"productId\":\"20000059181072\"}";
         return new Object[][] {{URL,data}};
     }
@@ -126,7 +126,7 @@ public class ProductfeeSaveTest {
     @DataProvider (name = "productSubscriptionFee")
     public static Object[][] productSubscriptionFee(){
         System.out.println("productFeeId:" + productFeeId);
-        String URL = "http://qa1-erp.jfz.com:8080/erp/scm/productSubscriptionFee/saveList.ht";
+        String URL = "http://qa1-erp.test.com:8080/erp/scm/productSubscriptionFee/saveList.ht";
         String data = "[{\"subscriptionAmountFrom\":\"100.00\",\"subscriptionAmountTo\":\"500\",\"subscriptionRate\":\"9\",\"commissionRatio\":\"10\",\"isPreTax\":\"1\",\"taxRate\":\"10\",\"settlementYield\":\"0.81\",\"productId\":\"20000059181072\",\"productFeeId\":productFeeId]";
         return new Object[][] {{URL,data}};
     }
@@ -180,7 +180,7 @@ public class ProductfeeSaveTest {
 
     @DataProvider (name = "Productfeeexist")
     public static Object[][] productfeeexit(){
-        String URL = "http://qa1-erp.jfz.com:8080/erp/scm/productfee/save.ht";
+        String URL = "http://qa1-erp.test.com:8080/erp/scm/productfee/save.ht";
         String data = "{\"agreementOrgId\":20000112446294,\"agreementOrgName\":\"夏道山测试数据\",\"agreementType\":\"2\",\"validityFrom\":\"2017-09-04\",\"validityTo\":\"2017-09-10\",\"incomeCalculationSource\":\"1\",\"isInstallment\":\"2\",\"incomeCalculationBenchmark\":\"2\",\"isUpdatingFee\":0,\"subscriptionForms\":[{\"period\":1,\"subscriptionRatio\":\"1\",\"subscriptionTime\":\"2017-08-31\"}],\"productId\":\"20000059181072\"}";
         return new Object[][] {{URL,data}};
     }

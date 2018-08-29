@@ -1,10 +1,10 @@
 package cn.erp.testng.testScript;
 
 import com.google.gson.Gson;
-import com.jfz.erp.api.thrift.service.ThriftContractService;
-import com.jfz.erp.api.thrift.struct.TTradeParam;
-import com.jfz.erp.api.thrift.struct.TTradeResult;
-import com.jfz.erp.api.thrift.struct.TTradeType;
+import com.test.erp.api.thrift.service.ThriftContractService;
+import com.test.erp.api.thrift.struct.TTradeParam;
+import com.test.erp.api.thrift.struct.TTradeResult;
+import com.test.erp.api.thrift.struct.TTradeType;
 import net.sf.json.JSONObject;
 import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.protocol.TProtocol;
@@ -50,7 +50,7 @@ public class ThriftisCanRedeemTest {
             {
                 TTradeParam redeemStruct = new TTradeParam();
                 redeemStruct.uid = "3426991543";
-                redeemStruct.prdJfzId = "P62c9rrqc2";
+                redeemStruct.prdtestId = "P62c9rrqc2";
                 redeemStruct.amount = 2000;
                 redeemStruct.tradeType = TTradeType.Redemption;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
                 redeemStruct.openDay = "2018-04-07";

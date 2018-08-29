@@ -1,4 +1,4 @@
-package com.jfz.erp.online.purchase.thrifttestng;
+package com.test.erp.online.purchase.thrifttestng;
 
 import java.util.Set;
 

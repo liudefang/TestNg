@@ -6,8 +6,8 @@ import cn.erp.testng.util.ExcelUtil;
 import cn.erp.testng.util.Log;
 import com.google.gson.Gson;
 import com.hotent.core.util.DateUtil;
-import com.jfz.erp.api.thrift.service.ThriftContractService;
-import com.jfz.erp.api.thrift.struct.*;
+import com.test.erp.api.thrift.service.ThriftContractService;
+import com.test.erp.api.thrift.struct.*;
 import net.sf.json.JSONObject;
 import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.protocol.TProtocol;
@@ -74,13 +74,13 @@ public class ThrirftsignContractTest {
 			  {
 	              TContractStruct addStruct = new TContractStruct();
 	             /*addStruct.uid = "2842544171";     //预发测试环境的uid
-	              addStruct.prdJfzId = "P61pupidcd";   //预发测试环境的prdid
+	              addStruct.prdtestId = "P61pupidcd";   //预发测试环境的prdid
 	              addStruct.prdName = "测试开放日净值同步持仓";    //预发测试环境的产品名称*/
 
 				  //在日志文件中打印关键字信息
 				  Log.info("从Excel文件读取到的关键字是:"+SignContract.keyword);
 				  Log.info("从Excel文件中读取的操作值是："+SignContract.uid);
-				  Log.info("从Excel文件中读取的操作值是："+SignContract.prdJfzId);
+				  Log.info("从Excel文件中读取的操作值是："+SignContract.prdtestId);
 				  Log.info("从Excel文件中读取的操作值是："+SignContract.prdName);
 				  Log.info("从Excel文件中读取的操作值是："+SignContract.riskLevel);
 				  Log.info("从Excel文件中读取的操作值是："+SignContract.realCertifyCard);
@@ -92,9 +92,9 @@ public class ThrirftsignContractTest {
 				  Log.info("从Excel文件中读取的操作值是："+SignContract.bankCard);
 
 				  addStruct.uid = ""+SignContract.uid+"";
-	              addStruct.prdJfzId = ""+SignContract.prdJfzId+"";
+	              addStruct.prdtestId = ""+SignContract.prdtestId+"";
 	              addStruct.prdName = ""+SignContract.prdName+"";
-	              //addStruct.prdJfzId = "P61c7iwcge";
+	              //addStruct.prdtestId = "P61c7iwcge";
 	              //addStruct.prdName = "ERP-DC没有持仓";
 	              addStruct.money = 200;
 	              addStruct.signType = TContractSignType.AssetProofSign;
@@ -158,7 +158,7 @@ public class ThrirftsignContractTest {
 	              TContractStruct addStruct = new TContractStruct();
 	             addStruct.contractCode = contractCode;
 	             addStruct.uid = ""+SignContract.uid+"";
-	             addStruct.prdJfzId = ""+SignContract.prdJfzId+"";
+	             addStruct.prdtestId = ""+SignContract.prdtestId+"";
 	             addStruct.prdName = ""+SignContract.prdName+"";
 	             addStruct.money = 300;
 	             addStruct.signType = TContractSignType.OnlineSign;

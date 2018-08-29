@@ -3,8 +3,8 @@ package cn.erp.testng.testScript;
 import cn.erp.testng.configuration.SignContract;
 import com.google.gson.Gson;
 import com.hotent.core.util.DateUtil;
-import com.jfz.erp.api.thrift.service.ThriftContractService;
-import com.jfz.erp.api.thrift.struct.*;
+import com.test.erp.api.thrift.service.ThriftContractService;
+import com.test.erp.api.thrift.struct.*;
 import net.sf.json.JSONObject;
 import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.protocol.TProtocol;
@@ -52,7 +52,7 @@ public class ThriftsignAppendContractTest {
             {
                 TTradeParam appendStruct = new TTradeParam();
                 appendStruct.uid = "2842544150";
-                appendStruct.prdJfzId = "222222S0";
+                appendStruct.prdtestId = "222222S0";
                 appendStruct.amount = 600;
                 appendStruct.tradeType = TTradeType.Append;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
                 appendStruct.openDay = "2018-03-18";
@@ -107,7 +107,7 @@ public class ThriftsignAppendContractTest {
             {
                 TTradeParam appendStruct = new TTradeParam();
                 appendStruct.uid = "2842544150";
-                appendStruct.prdJfzId = "222222S0";
+                appendStruct.prdtestId = "222222S0";
                 appendStruct.amount = 50;
                 appendStruct.tradeType = TTradeType.Append;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
                 appendStruct.openDay = "2018-03-20";
@@ -160,7 +160,7 @@ public class ThriftsignAppendContractTest {
             {
                 TTradeParam appendStruct = new TTradeParam();
                 appendStruct.uid = "3426991545";
-                appendStruct.prdJfzId = "P6e3f2xq0k";
+                appendStruct.prdtestId = "P6e3f2xq0k";
                 appendStruct.amount = 300;
                 appendStruct.tradeType = TTradeType.Append;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
                 appendStruct.openDay = ""+date1+"";
@@ -214,7 +214,7 @@ public class ThriftsignAppendContractTest {
             {
                 TTradeParam appendStruct = new TTradeParam();
                 appendStruct.uid = "3426991543";
-                appendStruct.prdJfzId = "P62c9rrqc3";
+                appendStruct.prdtestId = "P62c9rrqc3";
                 appendStruct.amount = 300;
                 appendStruct.tradeType = TTradeType.Append;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
                 appendStruct.openDay = ""+date1+"";

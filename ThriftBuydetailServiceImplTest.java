@@ -1,4 +1,4 @@
-package com.jfz.erp.online.purchase.thrifttestng;
+package com.test.erp.online.purchase.thrifttestng;
 
 import java.util.List;
 
@@ -11,9 +11,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.google.gson.Gson;
-import com.jfz.erp.api.thrift.service.ThriftBuydetailService;
-import com.jfz.erp.api.thrift.service.ThriftRemittanceService;
-import com.jfz.erp.api.thrift.struct.TBuydetailStruct;
+import com.test.erp.api.thrift.service.ThriftBuydetailService;
+import com.test.erp.api.thrift.service.ThriftRemittanceService;
+import com.test.erp.api.thrift.struct.TBuydetailStruct;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;

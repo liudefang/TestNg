@@ -35,7 +35,7 @@ public class ProductfeeListTest {
     private HttpEntity entity;
     private String postResult = null;
     private String getResult = null;
-    public static String URL = "http://qa1-erp.jfz.com:8080/erp/scm/productfee";
+    public static String URL = "http://qa1-erp.test.com:8080/erp/scm/productfee";
     public static String productfeeurl = "";
     public int status,exp_status ;
     public String exp_errorMessage;
@@ -43,7 +43,7 @@ public class ProductfeeListTest {
     @Test
     public void Login(){
 
-        String loginurl = "http://qa1-erp.jfz.com:8080/login.ht";
+        String loginurl = "http://qa1-erp.test.com:8080/login.ht";
         httppost = new HttpPost( loginurl );
 
         List<NameValuePair> formTabe = new ArrayList<NameValuePair>();

@@ -1,4 +1,4 @@
-package com.jfz.erp.online.purchase.thrifttestng;
+package com.test.erp.online.purchase.thrifttestng;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -16,11 +16,11 @@ import org.apache.thrift.transport.TTransport;
 import org.testng.annotations.Test;
 
 import com.google.gson.Gson;
-import com.jfz.erp.api.thrift.service.ThriftContractService;
-import com.jfz.erp.api.thrift.struct.TCommonResultStruct;
-import com.jfz.erp.api.thrift.struct.TContractStruct;
-import com.jfz.erp.api.thrift.struct.TFileType;
-import com.jfz.erp.api.thrift.struct.TUploadFile;
+import com.test.erp.api.thrift.service.ThriftContractService;
+import com.test.erp.api.thrift.struct.TCommonResultStruct;
+import com.test.erp.api.thrift.struct.TContractStruct;
+import com.test.erp.api.thrift.struct.TFileType;
+import com.test.erp.api.thrift.struct.TUploadFile;
 
 public class TestTUploadFile {
  /*@Test

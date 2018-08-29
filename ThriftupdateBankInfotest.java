@@ -1,4 +1,4 @@
-package com.jfz.erp.online.purchase.thrifttestng;
+package com.test.erp.online.purchase.thrifttestng;
 
 import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.protocol.TProtocol;
@@ -9,11 +9,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.google.gson.Gson;
-import com.jfz.erp.api.thrift.service.ThriftContractService;
-import com.jfz.erp.api.thrift.service.ThriftRemittanceService;
-import com.jfz.erp.api.thrift.struct.ConfirmStatus;
-import com.jfz.erp.api.thrift.struct.TBankStruct;
-import com.jfz.erp.api.thrift.struct.TCommonResultStruct;
+import com.test.erp.api.thrift.service.ThriftContractService;
+import com.test.erp.api.thrift.service.ThriftRemittanceService;
+import com.test.erp.api.thrift.struct.ConfirmStatus;
+import com.test.erp.api.thrift.struct.TBankStruct;
+import com.test.erp.api.thrift.struct.TCommonResultStruct;
 
 import net.sf.json.JSONObject;
 

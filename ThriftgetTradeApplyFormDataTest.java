@@ -1,8 +1,8 @@
 package cn.erp.testng.testScript;
 
 import com.google.gson.Gson;
-import com.jfz.erp.api.thrift.service.ThriftContractService;
-import com.jfz.erp.api.thrift.struct.*;
+import com.test.erp.api.thrift.service.ThriftContractService;
+import com.test.erp.api.thrift.struct.*;
 import net.sf.json.JSONObject;
 import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.protocol.TProtocol;
@@ -39,7 +39,7 @@ public class ThriftgetTradeApplyFormDataTest {
                 TTradeParam ApplyFormData = new TTradeParam();
 
                 ApplyFormData.uid = "2842544150";
-                ApplyFormData.prdJfzId = "222222S0";
+                ApplyFormData.prdtestId = "222222S0";
                 ApplyFormData.amount = 1000;
                 ApplyFormData.tradeType = TTradeType.Append;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
                 ApplyFormData.openDay = "2018-03-15";
@@ -90,7 +90,7 @@ public class ThriftgetTradeApplyFormDataTest {
                 TTradeParam ApplyFormData = new TTradeParam();
 
                 ApplyFormData.uid = "2842544150";
-                ApplyFormData.prdJfzId = "222222S0";
+                ApplyFormData.prdtestId = "222222S0";
                 ApplyFormData.amount = 5;
                 ApplyFormData.tradeType = TTradeType.Append;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
                 ApplyFormData.openDay = "2018-04-14";

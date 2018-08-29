@@ -1,4 +1,4 @@
-package com.jfz.erp.online.purchase.thrifttestng;
+package com.test.erp.online.purchase.thrifttestng;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -18,16 +18,16 @@ import org.testng.annotations.Test;
 
 import com.google.gson.Gson;
 import com.hotent.core.util.DateUtil;
-import com.jfz.erp.api.thrift.service.ThriftContractService;
-import com.jfz.erp.api.thrift.struct.TAddressStruct;
-import com.jfz.erp.api.thrift.struct.TBankStruct;
-import com.jfz.erp.api.thrift.struct.TCommonResultStruct;
-import com.jfz.erp.api.thrift.struct.TContractResultStruct;
-import com.jfz.erp.api.thrift.struct.TContractSignType;
-import com.jfz.erp.api.thrift.struct.TContractStruct;
-import com.jfz.erp.api.thrift.struct.TFileType;
-import com.jfz.erp.api.thrift.struct.TRiskEvaluate;
-import com.jfz.erp.api.thrift.struct.TUploadFile;
+import com.test.erp.api.thrift.service.ThriftContractService;
+import com.test.erp.api.thrift.struct.TAddressStruct;
+import com.test.erp.api.thrift.struct.TBankStruct;
+import com.test.erp.api.thrift.struct.TCommonResultStruct;
+import com.test.erp.api.thrift.struct.TContractResultStruct;
+import com.test.erp.api.thrift.struct.TContractSignType;
+import com.test.erp.api.thrift.struct.TContractStruct;
+import com.test.erp.api.thrift.struct.TFileType;
+import com.test.erp.api.thrift.struct.TRiskEvaluate;
+import com.test.erp.api.thrift.struct.TUploadFile;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
@@ -53,10 +53,10 @@ public class ThriftTestBuydetail {
           {
               TContractStruct addStruct = new TContractStruct();
              /*addStruct.uid = "2842544171";     //预发测试环境的uid
-              addStruct.prdJfzId = "P61pupidcd";   //预发测试环境的prdid
+              addStruct.prdtestId = "P61pupidcd";   //预发测试环境的prdid
               addStruct.prdName = "测试开放日净值同步持仓";    //预发测试环境的产品名称*/
             /*  addStruct.uid = "7736803641";      
-              addStruct.prdJfzId = "P61po3czd1";
+              addStruct.prdtestId = "P61po3czd1";
               addStruct.prdName = "私募产品1768003";
               addStruct.money = 100;
               addStruct.signType = TContractSignType.AssetProofSign;
@@ -115,7 +115,7 @@ public class ThriftTestBuydetail {
               TContractStruct addStruct = new TContractStruct();
              addStruct.contractCode = "HT20170707006";
              addStruct.uid = "7736803641";      
-             addStruct.prdJfzId = "P61po3czd1";
+             addStruct.prdtestId = "P61po3czd1";
              addStruct.prdName = "私募产品1768003";
              addStruct.money = 100;
              addStruct.signType = TContractSignType.OfflineSign;

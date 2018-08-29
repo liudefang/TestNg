@@ -1,11 +1,11 @@
 package cn.erp.testng.testScript;
 
 import com.google.gson.Gson;
-import com.jfz.erp.api.thrift.service.ThriftContractService;
-import com.jfz.erp.api.thrift.struct.TOpenDay;
-import com.jfz.erp.api.thrift.struct.TTradeParam;
-import com.jfz.erp.api.thrift.struct.TTradeResult;
-import com.jfz.erp.api.thrift.struct.TTradeType;
+import com.test.erp.api.thrift.service.ThriftContractService;
+import com.test.erp.api.thrift.struct.TOpenDay;
+import com.test.erp.api.thrift.struct.TTradeParam;
+import com.test.erp.api.thrift.struct.TTradeResult;
+import com.test.erp.api.thrift.struct.TTradeType;
 import net.sf.json.JSONObject;
 import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.protocol.TProtocol;
@@ -44,9 +44,9 @@ public class ThriftgetOpenDayListTest {
             {
 
                 String uid = "2842544150";
-                String prdJfzId = "222222S0";
+                String prdtestId = "222222S0";
                 TTradeType tradeType = TTradeType.Append;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
-                List<TOpenDay> list = client.getOpenDayList(uid, prdJfzId, tradeType);
+                List<TOpenDay> list = client.getOpenDayList(uid, prdtestId, tradeType);
                 System.out.println("list:" + list);
                 int size = list.size();
 
@@ -89,9 +89,9 @@ public class ThriftgetOpenDayListTest {
             {
 
                 String uid = "2842544150";
-                String prdJfzId = "P62c9rrqc2";
+                String prdtestId = "P62c9rrqc2";
                 TTradeType tradeType = TTradeType.Append;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
-                List<TOpenDay> list = client.getOpenDayList(uid, prdJfzId, tradeType);
+                List<TOpenDay> list = client.getOpenDayList(uid, prdtestId, tradeType);
                 System.out.println("list:" + list);
                 int size = list.size();
 
@@ -134,9 +134,9 @@ public class ThriftgetOpenDayListTest {
             {
 
                 String uid = "2842544150";
-                String prdJfzId = "P62c9rrqc2";
+                String prdtestId = "P62c9rrqc2";
                 TTradeType tradeType = TTradeType.Redemption;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
-                List<TOpenDay> list = client.getOpenDayList(uid, prdJfzId, tradeType);
+                List<TOpenDay> list = client.getOpenDayList(uid, prdtestId, tradeType);
                 System.out.println("list:" + list);
                 int size = list.size();
 

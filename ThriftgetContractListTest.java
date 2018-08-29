@@ -1,4 +1,4 @@
-package com.jfz.erp.online.purchase.thrifttestng;
+package com.test.erp.online.purchase.thrifttestng;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,9 +11,9 @@ import org.apache.thrift.transport.TTransport;
 import org.testng.annotations.Test;
 
 import com.google.gson.Gson;
-import com.jfz.erp.api.thrift.service.ThriftContractService;
-import com.jfz.erp.api.thrift.struct.TContractStruct;
-import com.jinfuzi.erp.crm.model.contract.Contract;
+import com.test.erp.api.thrift.service.ThriftContractService;
+import com.test.erp.api.thrift.struct.TContractStruct;
+import com.test.erp.crm.model.contract.Contract;
 
 public class ThriftgetContractListTest {
 	

@@ -1,11 +1,11 @@
 package cn.erp.testng.testScript;
 
 import com.google.gson.Gson;
-import com.jfz.erp.api.thrift.service.ThriftContractService;
-import com.jfz.erp.api.thrift.struct.TTradeParam;
-import com.jfz.erp.api.thrift.struct.TTradeResult;
-import com.jfz.erp.api.thrift.struct.TTradeStatus;
-import com.jfz.erp.api.thrift.struct.TTradeType;
+import com.test.erp.api.thrift.service.ThriftContractService;
+import com.test.erp.api.thrift.struct.TTradeParam;
+import com.test.erp.api.thrift.struct.TTradeResult;
+import com.test.erp.api.thrift.struct.TTradeStatus;
+import com.test.erp.api.thrift.struct.TTradeType;
 import net.sf.json.JSONObject;
 import org.apache.thrift.protocol.TCompactProtocol;
 import org.apache.thrift.protocol.TProtocol;
@@ -52,7 +52,7 @@ public class ThriftisCanAppendTest {
             {
                 TTradeParam appendStruct = new TTradeParam();
                 appendStruct.uid = "2842544150";
-                appendStruct.prdJfzId = "P6e3f2xq0k";
+                appendStruct.prdtestId = "P6e3f2xq0k";
                 appendStruct.amount = 200;
                 appendStruct.tradeType = TTradeType.Append;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
                 appendStruct.openDay = ""+date1+"";
@@ -106,7 +106,7 @@ public class ThriftisCanAppendTest {
             {
                 TTradeParam appendStruct = new TTradeParam();
                 appendStruct.uid = "2842544150";
-                appendStruct.prdJfzId = "222222S0";
+                appendStruct.prdtestId = "222222S0";
                 appendStruct.amount = 200;
                 appendStruct.tradeType = TTradeType.Append;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
                 appendStruct.openDay = ""+date1+"";
@@ -162,7 +162,7 @@ public class ThriftisCanAppendTest {
             {
                 TTradeParam appendStruct = new TTradeParam();
                 appendStruct.uid = "2842544150";
-                appendStruct.prdJfzId = "222222S0";
+                appendStruct.prdtestId = "222222S0";
                 appendStruct.amount = 200;
                 appendStruct.tradeType = TTradeType.Append;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
                 appendStruct.openDay = ""+date1+"";
@@ -218,7 +218,7 @@ public class ThriftisCanAppendTest {
             {
                 TTradeParam appendStruct = new TTradeParam();
                 appendStruct.uid = "2842544150";
-                appendStruct.prdJfzId = "222222S0";
+                appendStruct.prdtestId = "222222S0";
                 appendStruct.amount = 200;
                 appendStruct.tradeType = TTradeType.Append;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
                 appendStruct.openDay = ""+date1+"";
@@ -274,7 +274,7 @@ public class ThriftisCanAppendTest {
             {
                 TTradeParam appendStruct = new TTradeParam();
                 appendStruct.uid = "2842544150";
-                appendStruct.prdJfzId = "222222S0";
+                appendStruct.prdtestId = "222222S0";
                 appendStruct.amount = 10;
                 appendStruct.tradeType = TTradeType.Append;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
                 appendStruct.openDay = ""+date1+"";
@@ -329,7 +329,7 @@ public class ThriftisCanAppendTest {
             {
                 TTradeParam appendStruct = new TTradeParam();
                 appendStruct.uid = "2842544150";
-                appendStruct.prdJfzId = "222222S0";
+                appendStruct.prdtestId = "222222S0";
                 appendStruct.amount = 5;
                 appendStruct.tradeType = TTradeType.Append;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
                 appendStruct.openDay = ""+date1+"";
@@ -385,7 +385,7 @@ public class ThriftisCanAppendTest {
             {
                 TTradeParam appendStruct = new TTradeParam();
                 appendStruct.uid = "3842544150";
-                appendStruct.prdJfzId = "222222S0";
+                appendStruct.prdtestId = "222222S0";
                 appendStruct.amount = 10;
                 appendStruct.tradeType = TTradeType.Append;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
                 appendStruct.openDay = ""+date1+"";
@@ -441,7 +441,7 @@ public class ThriftisCanAppendTest {
             {
                 TTradeParam appendStruct = new TTradeParam();
                 appendStruct.uid = "2842544150";
-                appendStruct.prdJfzId = "1222222S0";
+                appendStruct.prdtestId = "1222222S0";
                 appendStruct.amount = 10;
                 appendStruct.tradeType = TTradeType.Append;  //Purchase(1):申购,Subscription(2)：认购,Append(3)：追加,Redemption(4)：赎回;
                 appendStruct.openDay = ""+date1+"";

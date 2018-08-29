@@ -1,4 +1,4 @@
-package com.jfz.erp.online.purchase.thrifttestng;
+package com.test.erp.online.purchase.thrifttestng;
 
 import java.util.List;
 
@@ -12,14 +12,14 @@ import org.testng.annotations.Test;
 
 import com.google.gson.Gson;
 import com.hotent.core.util.DateUtil;
-import com.jfz.erp.api.thrift.service.ThriftContractService;
-import com.jfz.erp.api.thrift.service.ThriftOnlineSaleProductService;
-import com.jfz.erp.api.thrift.struct.TContractResultStruct;
-import com.jfz.erp.api.thrift.struct.TContractSignType;
-import com.jfz.erp.api.thrift.struct.TContractStruct;
-import com.jfz.erp.api.thrift.struct.TOnlineSaleProduct;
-import com.jfz.erp.api.thrift.struct.TOnlineSaleProductAttribute;
-import com.jfz.erp.api.thrift.struct.TOnlineSaleProductType;
+import com.test.erp.api.thrift.service.ThriftContractService;
+import com.test.erp.api.thrift.service.ThriftOnlineSaleProductService;
+import com.test.erp.api.thrift.struct.TContractResultStruct;
+import com.test.erp.api.thrift.struct.TContractSignType;
+import com.test.erp.api.thrift.struct.TContractStruct;
+import com.test.erp.api.thrift.struct.TOnlineSaleProduct;
+import com.test.erp.api.thrift.struct.TOnlineSaleProductAttribute;
+import com.test.erp.api.thrift.struct.TOnlineSaleProductType;
 
 import net.sf.json.JSONObject;
 
